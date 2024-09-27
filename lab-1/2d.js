@@ -1,9 +1,17 @@
 // Numbers array
-let numbers = [25, 31, 42, 77];
+const numbers = [25, 31, 42, 77];
 
-let multiply = () => {
-    return num1 + num2;
+// Funtion to multiply numbers under 70 by 2
+let multiply = (num) => {
+    if (num < 70) {
+        return num *= 2;
+    } else {
+        return num;
+    }
 }
 
-// Call sum and give it two numbers so that they can be summed
-console.log(sum(5, 5));
+// Create a new array after we call the funtion looping through the array
+const newArray = numbers.map(multiply);
+
+// Output new array
+console.log(newArray);
