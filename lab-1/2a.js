@@ -1,1 +1,5 @@
-// lab 01 code
+let message = () => {
+    console.log("Data Representation and Querying.");
+}
+
+message();
