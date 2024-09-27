@@ -1,6 +1,5 @@
-let sum = (num1, num2) => {
-    return num1 + num2;
+let message = () => {
+    console.log("Data Representation and Querying.");
 }
 
-// Call sum and give it two numbers so that they can be summed
-console.log(sum(5, 5));
+message();
