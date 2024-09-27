@@ -1,5 +1,5 @@
-let message = () => {
-    console.log("Data Representation and Querying.");
+let text = (message) => {
+    return message;
 }
 
-message();
+console.log("Data Representation & Querying");
