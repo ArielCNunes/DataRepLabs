@@ -1,5 +1,6 @@
-let text = (message) => {
-    return message;
+let sum = (num1, num2) => {
+    return num1 + num2;
 }
 
-console.log("Data Representation & Querying");
+// Call sum and give it two numbers so that they can be summed
+console.log(sum(5, 5));
