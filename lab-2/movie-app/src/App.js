@@ -4,8 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <h2>It is {new Date().toLocaleDateString()}</h2>
+      
     </div>
   );
 }
