@@ -7,6 +7,8 @@ import NavigationBar from './components/Navbar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Content from './components/Content';
+import Read from './components/Read';
+import Create from './components/Create';
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
         {/* Defining route paths and the components they should render */}
         <Routes>
           <Route path="/home" element={<Content />} />
-          <Route path="/read" element={<Footer />} />
-          <Route path="/create" element={<Header />} />
+          <Route path="/Read" element={<Read />} />
+          <Route path="/create" element={<Create />} />
         </Routes>
         {/* Static components rendered below the routed content */}
         <Header />
