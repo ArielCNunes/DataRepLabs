@@ -1,21 +1,16 @@
 import React from 'react';
+import MovieItem from './MovieItem';
 
-// The Movies component receives the movies data as a prop
+// Map and pass movies to MovieItem
 const Movies = ({ movies }) => {
-  return (
-    <div>
-      <h1>Movie List</h1>
-      {/* Mapping through the movies array to display each movie */}
-      {movies.map((movie, index) => (
-        <div key={index}>
-          <h2>{movie.Title} ({movie.Year})</h2>
-          <img src={movie.Poster} alt={movie.Title} />
-          <p>IMDB ID: {movie.imdbID}</p>
-          <p>Type: {movie.Type}</p>
+    return (
+        <div>
+            <h1>Movie List</h1>
+            {movies.map((movie) => (
+                <MovieItem movie={movie} key={movie.imdbID} />  // Passing each movie as a prop
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default Movies;
