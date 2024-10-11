@@ -3,13 +3,14 @@ import Card from 'react-bootstrap/Card';
 
 // Render individual movie details
 function MovieItem({ movie }) {
-    // Log movie details to the console whenever the movie prop changes
+    // Log movie details to the console whenever a new movie is passed to this component
     useEffect(() => {
         console.log("Movie Item:", movie);
     }, [movie]); // Only run this effect when the movie prop changes
 
     return (
         <div>
+            {/** Bootstrap card */}
             <Card>
                 <Card.Body>
                     <Card.Header>{movie.Title}</Card.Header>
